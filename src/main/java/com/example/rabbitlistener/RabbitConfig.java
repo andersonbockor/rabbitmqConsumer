@@ -27,7 +27,7 @@ public class RabbitConfig  implements RabbitListenerConfigurer {
 	//}
 	
 	@Bean
-    public SimpleRabbitListenerContainerFactory jsaFactory(ConnectionFactory connectionFactory,
+    public SimpleRabbitListenerContainerFactory factory(ConnectionFactory connectionFactory,
             SimpleRabbitListenerContainerFactoryConfigurer configurer) {
     	
         SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
